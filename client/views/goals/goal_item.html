@@ -1,0 +1,314 @@
+<template name="goalItem">
+    <div class="goal">
+        <form id="addnumbers">
+            <div class='goalupper'>
+                <div class="goalleft goaltitle">
+                    <p>
+                        <span class="goalicon"><i class="fa-large details icon-{{icon}}"></i></span>&nbsp; {{goal}}
+                    </p>
+                </div>
+                <div class="goalright">
+                    {{#if statusIs 'inprogress'}}<p><span class="editlink"><a href="{{pathFor 'goalEdit'}}">Edit</a></span><span><a href="{{pathFor 'goalChart'}}"><i class='fa-medium icon-stats chartbutton' ></i></a></span></p>{{/if}}
+                    {{#if statusIs 'complete'}}<span><i class='fa-large icon-checkmark checkmark' ></i></span>{{/if}}
+                </div>
+            </div>
+            <div class='goallower hidden'>
+                {{#if statusIs 'inprogress'}}
+                    <input type='number' name='numbers' class='info gatherinfo' required />
+                    <button type="submit" name="updatenumbers" class="btn btn-medium diditbutton"><i class="fa-medium icon-checkmark" ></i>&nbsp;&nbsp;I did it!</button>
+                {{/if}}
+                {{#if statusIs 'complete'}}
+                    <button type="submit" name="useagain" class="btn btn-medium useagainbutton"><i class="fa-medium icon-thumbs-up" ></i>&nbsp;&nbsp;Use Goal Again</button>
+                {{/if}}
+            </div>
+        </form>
+
+        <!--<div id="chartdiv">-->
+
+        <!--</div>-->
+    </div>
+</template>
+
+<template name="goalAdd">
+    <form id="addgoalform">
+        <h3>Add a New Goal</h3>
+        <div class="input-group">
+            <label for="category">Category</label>
+            <div>
+                <div class="radio-group">
+                    <input type="radio" name="category" value="school" checked>
+                    <label class="radio">School</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="category" value="work">
+                    <label class="radio">Work</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="category" value="personal">
+                    <label class="radio">Personal</label>
+                </div>
+            </div>
+
+            <!--<div id="category">-->
+            <!--{{#each categories}}-->
+            <!--<label class="checkbox inline">-->
+            <!--<input id="category_{{_id}}" type="checkbox" value="{{_id}}" name="category" /> {{category}}-->
+            <!--</label>-->
+            <!--{{/each}}-->
+            <!--</div>-->
+        </div>
+
+        <div class="input-group">
+            <label for="goal">Goal</label>
+            <div>
+                <input id="goal" name="goal" type="text" value="" placeholder="What is your goal?"/>
+            </div>
+        </div>
+
+
+        <div class="input-group">
+            <label for="icon">Icon <small>(An icon is not required.)</small></label>
+            <div id="icon" class="controls uncheckit">
+                <ul class="icondropdown">
+                    <li class="icomoonli">
+                        <input type="radio" name="icon" value="user">
+                        <label class="radio"><i class="fa-medium icon icon-user" ></i></label>
+                    </li>
+                    <li class="icomoonli">
+                        <input type="radio" name="icon" value="users">
+                        <label class="radio"><i class="fa-medium icon icon-users" ></i></label>
+                    </li>
+                    <li class="icomoonli">
+                        <input type="radio" name="icon" value="boss">
+                        <label class="radio"><i class="fa-medium icon icon-boss" ></i></label>
+                    </li>
+                    <li class="icomoonli">
+                        <input type="radio" name="icon" value="doctor">
+                        <label class="radio"><i class="fa-medium icon icon-doctor" ></i></label>
+                    </li>
+                    <li class="icomoonli">
+                        <input type="radio" name="icon" value="health">
+                        <label class="radio"><i class="fa-medium icon icon-health" ></i></label>
+                    </li>
+                    <li class="icomoonli">
+                        <input type="radio" name="icon" value="phone">
+                        <label class="radio"><i class="fa-medium icon icon-phone" ></i></label>
+                    </li>
+                    <li class="icomoonli">
+                        <input type="radio" name="icon" value="alarm">
+                        <label class="radio"><i class="fa-medium icon icon-alarm" ></i></label>
+                    </li>
+                    <li class="icomoonli">
+                        <input type="radio" name="icon" value="stopwatch">
+                        <label class="radio"><i class="fa-medium icon icon-stopwatch" ></i></label>
+                    </li>
+                    <li class="icomoonli">
+                        <input type="radio" name="icon" value="bell">
+                        <label class="radio"><i class="fa-medium icon icon-bell" ></i></label>
+                    </li>
+                    <li class="icomoonli">
+                        <input type="radio" name="icon" value="book">
+                        <label class="radio"><i class="fa-medium icon icon-book" ></i></label>
+                    </li>
+                    <li class="icomoonli">
+                        <input type="radio" name="icon" value="openbook">
+                        <label class="radio"><i class="fa-medium icon icon-openbook" ></i></label>
+                    </li>
+                    <li class="icomoonli">
+                        <input type="radio" name="icon" value="clipboard">
+                        <label class="radio"><i class="fa-medium icon icon-clipboard" ></i></label>
+                    </li>
+                    <li class="icomoonli">
+                        <input type="radio" name="icon" value="suitcase">
+                        <label class="radio"><i class="fa-medium icon icon-suitcase" ></i></label>
+                    </li>
+                    <li class="icomoonli">
+                        <input type="radio" name="icon" value="dollar">
+                        <label class="radio"><i class="fa-medium icon icon-dollar" ></i></label>
+                    </li>
+                    <li class="icomoonli">
+                        <input type="radio" name="icon" value="cart">
+                        <label class="radio"><i class="fa-medium icon icon-cart" ></i></label>
+                    </li>
+                    <li class="icomoonli">
+                        <input type="radio" name="icon" value="coffee">
+                        <label class="radio"><i class="fa-medium icon icon-coffee" ></i></label>
+                    </li>
+                    <li class="icomoonli">
+                        <input type="radio" name="icon" value="silverware">
+                        <label class="radio"><i class="fa-medium icon icon-silverware" ></i></label>
+                    </li>
+                    <li class="icomoonli">
+                        <input type="radio" name="icon" value="car">
+                        <label class="radio"><i class="fa-medium icon icon-car" ></i></label>
+                    </li>
+                    <li class="icomoonli">
+                        <input type="radio" name="icon" value="bus">
+                        <label class="radio"><i class="fa-medium icon icon-bus" ></i></label>
+                    </li>
+                    <li class="icomoonli">
+                        <input type="radio" name="icon" value="bike">
+                        <label class="radio"><i class="fa-medium icon icon-bike" ></i></label>
+                    </li>
+                    <li class="icomoonli">
+                        <input type="radio" name="icon" value="basketball">
+                        <label class="radio"><i class="fa-medium icon icon-basketball" ></i></label>
+                    </li>
+                    <li class="icomoonli">
+                        <input type="radio" name="icon" value="headphones">
+                        <label class="radio"><i class="fa-medium icon icon-headphones" ></i></label>
+                    </li>
+                    <li class="icomoonli">
+                        <input type="radio" name="icon" value="t-shirt">
+                        <label class="radio"><i class="fa-medium icon icon-t-shirt" ></i></label>
+                    </li>
+                    <li class="icomoonli">
+                        <input type="radio" name="icon" value="pill">
+                        <label class="radio"><i class="fa-medium icon icon-pill" ></i></label>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div id="submitbuttonarea">
+            <input type="submit" value="Submit" class="btn btn-primary"/>
+            <button type="button" class="btn btn-medium canceladdgoal">Cancel</button>
+        </div>
+    </form>
+</template>
+
+<template name="goalEdit">
+    <form id="addgoalform">
+        <h3>Edit This Goal</h3>
+        <div class="input-group">
+            <label for="category">Category</label>
+            <div>
+                <select type="text" id="category" value="{{category}}" name="category">
+                    <option>School</option>
+                    <option>Personal</option>
+                    <option>Work</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <label for="goal">Goal</label>
+            <div>
+                <input id="goal" name="goal" type="text" value="{{goal}}" />
+            </div>
+        </div>
+
+
+        <div class="input-group">
+            <label for="icon">Icon</label>
+            <div id="icon" class="controls uncheckit">
+                <ul class="icondropdown">
+                    <li class="icomoonli">
+                        <input type="radio" name="icon" value="user">
+                        <label class="radio"><i class="fa-medium icon icon-user" ></i></label>
+                    </li>
+                    <li class="icomoonli">
+                        <input type="radio" name="icon" value="users">
+                        <label class="radio"><i class="fa-medium icon icon-users" ></i></label>
+                    </li>
+                    <li class="icomoonli">
+                        <input type="radio" name="icon" value="boss">
+                        <label class="radio"><i class="fa-medium icon icon-boss" ></i></label>
+                    </li>
+                    <li class="icomoonli">
+                        <input type="radio" name="icon" value="doctor">
+                        <label class="radio"><i class="fa-medium icon icon-doctor" ></i></label>
+                    </li>
+                    <li class="icomoonli">
+                        <input type="radio" name="icon" value="health">
+                        <label class="radio"><i class="fa-medium icon icon-health" ></i></label>
+                    </li>
+                    <li class="icomoonli">
+                        <input type="radio" name="icon" value="phone">
+                        <label class="radio"><i class="fa-medium icon icon-phone" ></i></label>
+                    </li>
+                    <li class="icomoonli">
+                        <input type="radio" name="icon" value="alarm">
+                        <label class="radio"><i class="fa-medium icon icon-alarm" ></i></label>
+                    </li>
+                    <li class="icomoonli">
+                        <input type="radio" name="icon" value="stopwatch">
+                        <label class="radio"><i class="fa-medium icon icon-stopwatch" ></i></label>
+                    </li>
+                    <li class="icomoonli">
+                        <input type="radio" name="icon" value="bell">
+                        <label class="radio"><i class="fa-medium icon icon-bell" ></i></label>
+                    </li>
+                    <li class="icomoonli">
+                        <input type="radio" name="icon" value="book">
+                        <label class="radio"><i class="fa-medium icon icon-book" ></i></label>
+                    </li>
+                    <li class="icomoonli">
+                        <input type="radio" name="icon" value="openbook">
+                        <label class="radio"><i class="fa-medium icon icon-openbook" ></i></label>
+                    </li>
+                    <li class="icomoonli">
+                        <input type="radio" name="icon" value="clipboard">
+                        <label class="radio"><i class="fa-medium icon icon-clipboard" ></i></label>
+                    </li>
+                    <li class="icomoonli">
+                        <input type="radio" name="icon" value="suitcase">
+                        <label class="radio"><i class="fa-medium icon icon-suitcase" ></i></label>
+                    </li>
+                    <li class="icomoonli">
+                        <input type="radio" name="icon" value="dollar">
+                        <label class="radio"><i class="fa-medium icon icon-dollar" ></i></label>
+                    </li>
+                    <li class="icomoonli">
+                        <input type="radio" name="icon" value="cart">
+                        <label class="radio"><i class="fa-medium icon icon-cart" ></i></label>
+                    </li>
+                    <li class="icomoonli">
+                        <input type="radio" name="icon" value="coffee">
+                        <label class="radio"><i class="fa-medium icon icon-coffee" ></i></label>
+                    </li>
+                    <li class="icomoonli">
+                        <input type="radio" name="icon" value="silverware">
+                        <label class="radio"><i class="fa-medium icon icon-silverware" ></i></label>
+                    </li>
+                    <li class="icomoonli">
+                        <input type="radio" name="icon" value="car">
+                        <label class="radio"><i class="fa-medium icon icon-car" ></i></label>
+                    </li>
+                    <li class="icomoonli">
+                        <input type="radio" name="icon" value="bus">
+                        <label class="radio"><i class="fa-medium icon icon-bus" ></i></label>
+                    </li>
+                    <li class="icomoonli">
+                        <input type="radio" name="icon" value="bike">
+                        <label class="radio"><i class="fa-medium icon icon-bike" ></i></label>
+                    </li>
+                    <li class="icomoonli">
+                        <input type="radio" name="icon" value="basketball">
+                        <label class="radio"><i class="fa-medium icon icon-basketball" ></i></label>
+                    </li>
+                    <li class="icomoonli">
+                        <input type="radio" name="icon" value="headphones">
+                        <label class="radio"><i class="fa-medium icon icon-headphones" ></i></label>
+                    </li>
+                    <li class="icomoonli">
+                        <input type="radio" name="icon" value="t-shirt">
+                        <label class="radio"><i class="fa-medium icon icon-t-shirt" ></i></label>
+                    </li>
+                    <li class="icomoonli">
+                        <input type="radio" name="icon" value="pill">
+                        <label class="radio"><i class="fa-medium icon icon-pill" ></i></label>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <br>
+
+        <div id="submitbuttonarea">
+            <input type="submit" value="Submit" class="btn btn-primary"/>
+            <a class="btn btn-danger delete" href="#">Delete Goal</a>
+        </div>
+    </form>
+</template>

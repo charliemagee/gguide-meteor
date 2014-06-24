@@ -1,0 +1,19 @@
+<template name="goalChart">
+    <div class="goal">
+        <div class='goalupper'>
+            <div class="goalleft goaltitle">
+                <p>
+                    <span class="goalicon"><i class="fa-large details icon-{{icon}}"></i></span>&nbsp; {{goal}}
+                </p>
+            </div>
+            <div class="goalright">
+                <a href="{{pathFor 'goalsList'}}"><button type='button' class='btn btn-small btn-danger backhome'><b>X</b></button></a>
+            </div>
+        </div>
+        <div class='goallower'>
+            <div id="chartdiv">
+
+            </div>
+        </div>
+    </div>
+</template>

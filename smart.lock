@@ -1,0 +1,55 @@
+{
+  "meteor": {},
+  "dependencies": {
+    "basePackages": {
+      "scss": {},
+      "iron-router": {},
+      "spin": {},
+      "amcharts": {},
+      "hammer": {},
+      "c3": {}
+    },
+    "packages": {
+      "scss": {
+        "git": "https://github.com/fourseven/meteor-scss.git",
+        "tag": "v0.9.3",
+        "commit": "185f3b2787fb85e653f7b7bf603d1493ed14943d"
+      },
+      "iron-router": {
+        "git": "https://github.com/EventedMind/iron-router.git",
+        "tag": "v0.7.1",
+        "commit": "d1ffb3f06ea4c112132b030f2eb1a70b81675ecb"
+      },
+      "spin": {
+        "git": "https://github.com/SachaG/meteor-spin.git",
+        "tag": "v0.2.2",
+        "commit": "3f655f0016228e4195acc784c45d3e3a247dc39f"
+      },
+      "amcharts": {
+        "git": "https://github.com/em0ney/meteor-amcharts.git",
+        "tag": "v0.0.2",
+        "commit": "b32b6bb06cf13e474f21198159fc4166ee2bcc60"
+      },
+      "hammer": {
+        "git": "https://github.com/noorderstorm/meteor-hammer.git",
+        "tag": "v0.1.3",
+        "commit": "1d37707c251c04c7d9b6023ba959b23c1f257c44"
+      },
+      "c3": {
+        "git": "https://github.com/TackMobile/meteor-c3.js.git",
+        "tag": "v0.0.4",
+        "commit": "a66f63cfd55afb8d90be897efc778f9d86219ab4"
+      },
+      "blaze-layout": {
+        "git": "https://github.com/EventedMind/blaze-layout.git",
+        "tag": "v0.2.4",
+        "commit": "b40e9b0612329288d75cf52ad14a7da64bb8618f"
+      },
+      "d3": {
+        "git": "https://github.com/sergeyt/meteor-d3.git",
+        "tag": "v3.4.1",
+        "commit": "bdfee250a332b516a158ed0913ec9363850afe0d"
+      }
+    }
+  }
+}

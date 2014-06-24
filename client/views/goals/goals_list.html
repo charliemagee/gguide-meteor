@@ -1,0 +1,18 @@
+<template name="goalsList">
+    <div class="goals">
+        {{#each goals}}
+            {{#if statusIs 'inprogress'}}
+                <div class="inprogress">
+                    {{> goalItem}}
+                </div>
+            {{/if}}
+            {{#if statusIs 'complete'}}
+                <div class="complete">
+                    {{> goalItem}}
+                </div>
+            {{/if}}
+        {{/each}}
+
+
+    </div>
+</template>

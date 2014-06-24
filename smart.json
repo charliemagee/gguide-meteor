@@ -1,0 +1,10 @@
+{
+  "packages": {
+    "scss": {},
+    "iron-router": {},
+    "spin": {},
+    "amcharts": {},
+    "hammer": {},
+    "c3": {}
+  }
+}

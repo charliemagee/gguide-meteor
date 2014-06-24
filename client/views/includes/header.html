@@ -1,0 +1,26 @@
+<template name="header">
+    <header>
+        <div id="nav">
+            {{#if currentUser}}
+                <div id="home" class="navbuttons"><h1 class="dropdown"><a href="{{pathFor 'goalAdd'}}"><i class="fa-regular icon-star" ></i><br/>Add Goal</a></h1></div>
+                <div id="school" class="navbuttons"><h1 class="dropdown"><i class="fa-regular icon-book" ></i><br/>School</h1></div>
+                <div id="work" class="navbuttons"><h1 class="dropdown"><i class="fa-regular icon-boss" ></i><br/>Work</h1></div>
+                <div id="personal" class="navbuttons"><h1 class="dropdown"><i class="fa-regular icon-basketball" ></i><br/>Personal</h1></div>
+
+                <div class="nav-collapse collapse">
+                    <ul class="nav pull-right">
+                        <li>{{> loginButtons}}</li>
+                    </ul>
+                </div>
+            {{else}}
+                <div id="welcome"><h1 class="dropdown">Welcome to Goal Guide</h1></div>
+
+                <div class="nav-collapse collapse">
+                    <ul class="nav pull-right">
+                        <li>{{> loginButtons}}</li>
+                    </ul>
+                </div>
+            {{/if}}
+        </div>
+    </header>
+</template>

@@ -1,0 +1,951 @@
+@font-face {
+  font-family: 'AmaranthRegular';
+  src: url('/Amaranth-webfont.eot');
+  src: url('/Amaranth-webfont.eot?#iefix') format('embedded-opentype'),
+  url('/Amaranth-webfont.woff') format('woff'),
+  url('/Amaranth-webfont.ttf') format('truetype'),
+  url('/Amaranth-webfont.svg#AmaranthRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'AmaranthItalic';
+  src: url('/Amaranth-Italic-webfont.eot');
+  src: url('/Amaranth-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+  url('/Amaranth-Italic-webfont.woff') format('woff'),
+  url('/Amaranth-Italic-webfont.ttf') format('truetype'),
+  url('/Amaranth-Italic-webfont.svg#AmaranthItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'AmaranthBold';
+  src: url('/Amaranth-Bold-webfont.eot');
+  src: url('/Amaranth-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('/Amaranth-Bold-webfont.woff') format('woff'),
+  url('/Amaranth-Bold-webfont.ttf') format('truetype'),
+  url('/Amaranth-Bold-webfont.svg#AmaranthBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'AmaranthBoldItalic';
+  src: url('/Amaranth-BoldItalic-webfont.eot');
+  src: url('/Amaranth-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+  url('/Amaranth-BoldItalic-webfont.woff') format('woff'),
+  url('/Amaranth-BoldItalic-webfont.ttf') format('truetype'),
+  url('/Amaranth-BoldItalic-webfont.svg#AmaranthBoldItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:url('/icomoon.eot');
+  src:url('/icomoon.eot?#iefix') format('embedded-opentype'),
+  url('/icomoon.ttf') format('truetype'),
+  url('/icomoon.woff') format('woff'),
+  url('/icomoon.svg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class*="icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.icon-heart:before {
+  content: "\e600";
+}
+.icon-star:before {
+  content: "\e602";
+}
+.icon-user:before {
+  content: "\e603";
+}
+.icon-book:before {
+  content: "\e605";
+}
+.icon-leaf:before {
+  content: "\e606";
+}
+.icon-bell:before {
+  content: "\e607";
+}
+.icon-doctor:before {
+  content: "\e608";
+}
+.icon-female:before {
+  content: "\e609";
+}
+.icon-male:before {
+  content: "\e60a";
+}
+.icon-envelope:before {
+  content: "\e604";
+}
+.icon-eye-open:before {
+  content: "\e62f";
+}
+.icon-umbrella:before {
+  content: "\e630";
+}
+.icon-home:before {
+  content: "\e60d";
+}
+.icon-cart:before {
+  content: "\e60e";
+}
+.icon-phone:before {
+  content: "\e610";
+}
+.icon-stopwatch:before {
+  content: "\e611";
+}
+.icon-users:before {
+  content: "\e612";
+}
+.icon-boss:before {
+  content: "\e613";
+}
+.icon-stats:before {
+  content: "\e614";
+}
+.icon-gift:before {
+  content: "\e615";
+}
+.icon-silverware:before {
+  content: "\e616";
+}
+.icon-briefcase:before {
+  content: "\e617";
+}
+.icon-sad:before {
+  content: "\e618";
+}
+.icon-smile:before {
+  content: "\e619";
+}
+.icon-neutral:before {
+  content: "\e61a";
+}
+.icon-thumbs-down:before {
+  content: "\e61b";
+}
+.icon-thumbs-up:before {
+  content: "\e61c";
+}
+.icon-health:before {
+  content: "\e60f";
+}
+.icon-basketball:before {
+  content: "\e629";
+}
+.icon-stack:before {
+  content: "\e62d";
+}
+.icon-coffee:before {
+  content: "\e631";
+}
+.icon-calendar:before {
+  content: "\e601";
+}
+.icon-alarm:before {
+  content: "\e60b";
+}
+.icon-suitcase:before {
+  content: "\e61d";
+}
+.icon-medkit:before {
+  content: "\e61e";
+}
+.icon-pill:before {
+  content: "\e621";
+}
+.icon-dollar:before {
+  content: "\e622";
+}
+.icon-car:before {
+  content: "\e623";
+}
+.icon-bike:before {
+  content: "\e624";
+}
+.icon-bus:before {
+  content: "\e625";
+}
+.icon-openbook:before {
+  content: "\e626";
+}
+.icon-eyedropper:before {
+  content: "\e627";
+}
+.icon-clipboard:before {
+  content: "\e628";
+}
+.icon-remove:before {
+  content: "\e62a";
+}
+.icon-checkmark:before {
+  content: "\e62b";
+}
+.icon-headphones:before {
+  content: "\e62e";
+}
+.icon-t-shirt:before {
+  content: "\e632";
+}
+
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  position: relative;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.231;
+  background: white;
+  font-family: 'AmaranthRegular', Arial, sans-serif;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+textarea {
+  resize: vertical;
+}
+.menuicon {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+a {
+  color: black;
+}
+
+// --- colors ----------------------
+
+$green-dark: #2d8c26;
+$green-main: #79cb73;
+
+$yellow-main: #fcf4b0;
+$gold: #fde64c;
+
+$blue-dark: #2c77cb;
+$blue-light: #d3e7fe;
+
+$red-main: #e30707;
+$red-light: #f6d3d3;
+
+.green {
+  color: $green-dark;
+}
+.blue {
+  color: $blue-dark;
+}
+
+// Border Radius
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+// Single Corner Border Radius
+@mixin border-top-left-radius($radius) {
+  -webkit-border-top-left-radius: $radius;
+  -moz-border-radius-topleft: $radius;
+  border-top-left-radius: $radius;
+}
+@mixin border-top-right-radius($radius) {
+  -webkit-border-top-right-radius: $radius;
+  -moz-border-radius-topright: $radius;
+  border-top-right-radius: $radius;
+}
+@mixin border-bottom-right-radius($radius) {
+  -webkit-border-bottom-right-radius: $radius;
+  -moz-border-radius-bottomright: $radius;
+  border-bottom-right-radius: $radius;
+}
+@mixin border-bottom-left-radius($radius) {
+  -webkit-border-bottom-left-radius: $radius;
+  -moz-border-radius-bottomleft: $radius;
+  border-bottom-left-radius: $radius;
+}
+// Opacity
+@mixin opacity($opacity) {
+  opacity: $opacity / 100;
+  filter: alpha(opacity=$opacity);
+}
+// Drop shadows
+@mixin box-shadow($shadow) {
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  box-shadow: $shadow;
+}
+// Transitions
+@mixin transition($transition) {
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -o-transition: $transition;
+  transition: $transition;
+}
+
+// --- layout ----------------------
+#header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 200px;
+}
+#nav {
+  width: 100%;
+  z-index: 180;
+  background-color: #fdf6ba;
+  border-bottom: 2px solid darkgray;
+}
+#login-buttons {
+  position: absolute;
+  top: 60px;
+  right: 25px;
+}
+#login-dropdown-list {
+  left: auto;
+  right: 5px;
+}
+.accounts-dialog input {
+  width: 100% !important;
+}
+#content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+#main {
+  margin: 30px 0 0 0;
+  width: 100%;
+  height: 100%;
+}
+
+// --- menu stuff ----------------------
+
+#loginsection {
+  display: block;
+}
+#home, #school, #work, #personal, #session  {
+  position: absolute;
+  top: 0;
+  float: left;
+  z-index: 150;
+  display: block;
+  height: 50px;
+  background-color: $yellow-main;
+  padding: 0;
+  margin: 0;
+}
+#welcome  {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  float: left;
+  z-index: 150;
+  display: block;
+  height: 50px;
+  background-color: $yellow-main;
+  padding: 0;
+  margin: 0;
+}
+#home  {
+  left: 0;
+  width: 25%;
+  border-right: 1px solid darkgray;
+}
+#school  {
+  left: 25%;
+  width: 25%;
+  border-right: 1px solid darkgray;
+}
+#work  {
+  left: 50%;
+  width: 25%;
+  border-right: 1px solid darkgray;
+}
+#personal  {
+  left: 75%;
+  width: 25%;
+  border-right: 1px solid darkgray;
+}
+#session  {
+  left: 80%;
+  width: 20%;
+}
+.currentmenu {
+  background-color: $gold !important;
+}
+.goallower label {
+  font-size: 16px;
+}
+.goallower button {
+  margin-top: 7px;
+}
+.goallower input {
+  margin-top: -2px;
+}
+.success {
+  width: 600px;
+  line-height: 60px;
+  background: $blue-light;
+  display: none;
+}
+
+
+// --- reorganize this stuff ---------------------
+
+.goalicon {
+  float: left;
+  width: 30px;
+  padding: 0;
+  margin: 0 20px 0 2px;
+}
+.goaltitle {
+  float: left;
+  width: 68%;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: left;
+  text-transform: capitalize;
+}
+.gatherinfo, .goalstatus {
+  float: left;
+  width: 100%;
+  height: 24px;
+}
+input.gatherinfo {
+  display: inline-block;
+  width: 100px;
+  height: 45px;
+  margin: 5px 5px 0 0;
+  padding: 0 0 0 10px;
+  font-size: 28px;
+}
+.goalstatus input {
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+}
+.checkmark {
+  float: right;
+  width: 30px;
+  height: 30px;
+  margin: -10px 5px 0 5px;
+}
+.chartbutton {
+  float: right;
+  width: 30px;
+  height: 30px;
+  margin: 0 0 0 10px;
+}
+#addgoalform, #adduserform {
+  position: absolute;
+  left: 4%;
+  z-index: 500;
+  width: 92%;
+  height: 300px;
+  padding: 1% 1% 20% 3%;
+  border-radius: 10px;
+  background-color: lighten($green-main, 15%);
+  margin-bottom: 20px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+#adduserform input {
+  width: 92%;
+  margin-bottom: -5px;
+}
+#addgoalform #category {
+  width: 40%;
+}
+#submitbuttonarea {
+  width: 100%;
+  height: 40px;
+  margin: 20px 0 0 30%;
+}
+.goalcomplete {
+  width: 90%;
+}
+.radio-group {
+  display: inline-block;
+  float: left;
+  padding-right: 15px;
+}
+.radio-group label {
+  font-size: 16px;
+  margin: 0 0 10px 0;
+}
+.radio-group input[type='radio'] {
+  vertical-align: middle;
+  margin-bottom: 3px;
+}
+.input-group {
+  clear: both;
+  margin-top: 10px;
+}
+.icondropdown {
+  margin: 0;
+  padding: 10px 0 10px 10px;
+  list-style-type: none;
+  width: 95%;
+  border: solid 1px #e3e3e3;
+  background-color: #f2f2f2;
+  overflow: hidden;
+}
+.icondropdown li {
+  display: inline-block;
+  float: left;
+  margin: 10px 0 0 0;
+  width: 70px;
+}
+.icon {
+  margin: -10px 0 0 5px;
+}
+.checkboxinfo {
+  display: block;
+  margin: -30px 0 0 40px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+label {
+  font-size: 20px;
+}
+li.icomoonli label {
+  margin: -5px 0 0 -7px;
+  padding-right: 10px;
+}
+input[type='checkbox'] {
+  -webkit-appearance:none;
+  width:30px;
+  height:30px;
+  background: url('../images/checked-no.png');
+  border-radius:5px;
+}
+input[type='radio'] {
+  //  -webkit-appearance:none;
+  width:25px;
+  height:25px;
+  margin: 0;
+}
+input[type='text'] {
+  //  -webkit-appearance:none;
+  font-size: 18px;
+  padding: 5px;
+  width: 90%;
+  height: 30px;
+}
+.thequestion {
+  float: left;
+  margin: 0;
+}
+.theanswer {
+  width: 180px;
+  margin: 0 0 0 20px;
+}
+.completedquestion label.radio.inline {
+  width: 40px;
+}
+.checkmessage {
+  margin: 0 0 0 8px;
+  padding: 0;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: none;
+  vertical-align: middle;
+}
+input[type='checkbox']:checked {
+  background: url('../images/checked-yes.png');
+}
+.user {
+  position: relative;
+  float: left;
+}
+.username {
+  color: $blue-dark;
+}
+.username:hover {
+  color: lighten($blue-dark, 15%);
+  cursor: hand;
+}
+.clear {
+  clear: both;
+}
+
+/* typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'AmaranthRegular', Arial, sans-serif;
+  color: black;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+h1 {
+  font-size: 18px;
+  line-height: 18px;
+}
+h2 {
+  font-size: 32px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 24px;
+}
+h5 {
+  font-size: 20px;
+}
+h6 {
+  font-size: 18px;
+}
+p {
+  font-family:  'AmaranthRegular', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+.fa-regular {
+  font-size: 20px;
+  vertical-align: middle;
+  padding: 0;
+}
+.fa-medium {
+  font-size: 24px;
+  vertical-align: middle;
+  padding: 0;
+}
+.fa-large {
+  font-size: 36px;
+  vertical-align: middle;
+  padding: 0;
+  margin-bottom: 10px;
+}
+.dropdown {
+  margin-top: 5px;
+}
+.required {
+  color: red;
+}
+.small {
+  font-size: 90%;
+  font-family: Arial, sans-serif;
+  color: black;
+  font-weight: normal;
+  text-align: center;
+}
+
+/* tweaks */
+.navbar h3 a {
+  color: white !important;
+  font-size: 30px !important;
+  margin: 0 0 0 20px;
+}
+.navbar h3 a:hover {
+  color: black !important;
+  text-decoration: none;
+}
+a {
+  text-decoration: none !important;
+}
+
+
+// buttons
+
+.btn-small, .btn-medium, .btn-large, .btn-huge {
+  font-family: 'AmaranthRegular', Arial, sans-serif;
+  font-weight: normal !important;
+}
+.btn {
+  display: inline-block;
+  padding: 4px 14px;
+  margin-bottom: 0; // For input.btn
+  font-size: 18px;
+  line-height: 24px;
+  *line-height: 24px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: $green-main;
+  color: black;
+  *background-color: $green-main;
+//  border: 1px solid black;
+  *border: 0; // Remove the border to prevent IE7's black border on input:focus
+  @include border-radius(6px);
+  @include box-shadow(#{inset 0 1px 0 rgba(255,255,255,.1), 0 1px 1px rgba(0,0,0,.05)});
+}
+
+  // Hover state
+.btn:hover {
+    text-decoration: none;
+  background-color: $green-dark;
+  *background-color: $green-main;
+  color: white;
+    background-position: 0 -15px;
+    // transition is only when going to hover, otherwise the background
+    // behind the gradient (there for IE<=9 fallback) gets mismatched
+    @include transition(background-position .1s linear);
+}
+.btn-danger {
+  background-color: red;
+  color: white;
+  font-size: 14px;
+  padding: 2px 10px;
+  margin-right: 15px;
+}
+.btn-danger:hover {
+  background-color: orangered;
+}
+.backhome {
+  float: right;
+}
+.delete {
+  float: none;
+}
+.useagainbutton {
+  background-color: darken($blue-light, 5%);
+  color: black;
+  *background-color: darken($blue-light, 5%);
+}
+
+
+/* goals list */
+
+.grid-block, .main, .goal, .comments li, .comment-form {
+  background: #fff;
+  border-radius: 12px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+}
+.alert {
+   background: #fff;
+   border-radius: 8px;
+   padding: 5px;
+   margin-bottom: 10px;
+   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+ }
+#spinner { height: 300px }
+.goal, .alert {
+  display: block;
+  *zoom: 1;
+  -webkit-transition: all 300ms 0ms;
+  -webkit-transition-delay: ease-in;
+  -moz-transition: all 300ms 0ms ease-in;
+  -o-transition: all 300ms 0ms ease-in;
+  transition: all 300ms 0ms ease-in;
+  position: relative;
+  opacity: 1;
+  width: 90%;
+  margin: 0 auto 10px;
+  background-color: $blue-light;
+}
+.alert {
+  width: 60%;
+}
+.goals {
+  height: 90%;
+  overflow: auto;
+}
+.goalupper {
+  display: block;
+  width: 100%;
+  height: 30px;
+  margin: 0 0 5x 0;
+  padding: 0;
+  @include border-radius(12px);
+}
+.goallower {
+  display: block;
+  width: 95%;
+  margin: 20px auto 0px;
+  padding: 0px 5px 10px 10px;
+  background-color: $yellow-main;
+  overflow: hidden;
+  text-align: center;
+  text-transform: none;
+  @include border-radius(12px);
+  overflow: hidden;
+  transition: height 0.7s;
+}
+.goallower.hidden {
+  display: none;
+}
+#chartdiv {
+  width: 98%;
+  height: 300px;
+  margin: 20px 0 0 0;
+  background-color: white;
+}
+div.goals div.inprogress div.goal {
+  background-color: darken($blue-light, 5%);
+}
+div.goals div.complete div.goal {
+  background-color: lighten($green-main, 10%);
+}
+.goalleft {
+  float: left;
+  width: 90%;
+}
+.goalright {
+  float: right;
+  width: 10%;
+}
+.alert {
+  background-color: $red-light;
+}
+.goal:before, .goal:after {
+  content: "";
+  display: table;
+}
+.goal:after { clear: both }
+.goal.invisible { opacity: 0 }
+.goal .upvote {
+  display: block;
+  margin: 7px 12px 0 0;
+  float: left;
+}
+.goal h3 {
+  margin: 0;
+  line-height: 1.4;
+  font-size: 18px;
+}
+.goal h3 a {
+  display: inline-block;
+  margin-right: 5px;
+}
+.goal h3 span {
+  font-weight: normal;
+  font-size: 14px;
+  display: inline-block;
+  color: #aaaaaa;
+}
+.goal p { margin: 0 }
+.goal .discuss {
+  display: block;
+  float: right;
+  margin-top: 7px;
+}
+.dropdown-menu span {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  line-height: 20px;
+  color: #bbb;
+  white-space: nowrap;
+}
+.load-more {
+  display: block;
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.05);
+  text-align: center;
+  height: 60px;
+  line-height: 60px;
+  margin-bottom: 10px;
+}
+.load-more:hover {
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/* -------------------- */
+
+//// Media Queries -------------------------------------------------------------------
+
+// iPhone 2G-4S Portrait
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px)
+and (orientation : portrait) {
+
+  #primarygoalscontainer {
+    left: 321px;
+  }
+
+  footer {
+    top: 335px;
+  }
+
+}
+
+// iPhone 2G-4S Landscape
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px)
+and (orientation : landscape) {
+
+  #goalscontainer {
+    height: 66%;
+  }
+
+  #primarygoalscontainer {
+    left: 481px;
+    height: 66%;
+  }
+
+  footer {
+    top: 290px;
+  }
+
+}
+
+// iPhone 5 Portrait
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : portrait) {
+
+
+
+}
+
+// iPhone 5 Landscape
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : landscape) {
+
+}
