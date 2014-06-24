@@ -1,3 +1,5 @@
+//not sure why PHPStorm doesn't see this as true js file
+
 Template.goalsList.helpers({
 
 	goals: function() {
